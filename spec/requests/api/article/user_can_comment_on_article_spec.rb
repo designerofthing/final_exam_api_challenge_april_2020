@@ -5,7 +5,7 @@ RSpec.describe 'POST /api/comments', type: :requests do
   
     describe 'User can comment on an article'
     before do 
-      post 'api/comments',
+      post '/api/comments',
       params: {
         comment: {
           body: 'I should have done more backend',
