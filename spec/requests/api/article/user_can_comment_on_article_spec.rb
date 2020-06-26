@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'POST /api/comments', type: :requests do
+RSpec.describe 'POST /api/comments', type: :request do
   let!(:article) {create(:article)}
   
     describe 'User can comment on an article'

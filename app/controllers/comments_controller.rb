@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CommentsController < ApplicationController
+class Api::CommentsController < ApplicationController
   def create
     @article = Article.find(params[:article_id])
     @comment = @article.comments.create(comment_params)
